@@ -43,7 +43,6 @@ public class Point{
         if(yDiff == 0 || xDiff == 0){
             slope = 0;
         }
-
         if(yDiff2 == 0 || xDiff2 == 0){
             slope2 = 0;
         }
