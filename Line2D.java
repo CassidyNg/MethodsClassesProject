@@ -11,7 +11,7 @@ public class Line2D {
         p2 = new Point(x2, y2);
     }
 
-    public Point getP1(){
+    public Point getP1(){ //check why methods returning Point@.....
         return p1;
     }
 
@@ -24,7 +24,7 @@ public class Line2D {
     }
 
     public double getSlope(){
-        double slope = (p1.getY() - p2.getY()) / (p1.getX() - p2.getX());
+        double slope = (double)(p1.getY() - p2.getY()) / (p1.getX() - p2.getX());
         return slope;
     }
 
