@@ -1,22 +1,26 @@
 public class Line2D {
     private Point p1, p2;
 
-    public Line2D(Point p1, Point p2){ //utilizes given two Points
+    public Line2D(Point p1, Point p2){ 
         this.p1 = p1;
         this.p2 = p2;
     }
 
-    public Line2D(int x1, int y1, int x2, int y2){ //utilizes givenpair of x and y coordinates
+    public Line2D(int x1, int y1, int x2, int y2){ 
         p1 = new Point(x1, y1);
         p2 = new Point(x2, y2);
     }
 
-    public Point getP1(){ //check why methods returning Point@.....
-        return p1;
+    public String getP1(){ //Originally returned Point object's memory location 
+        int x = p1.getX();
+        int y = p1.getY();
+        return "x = " + x + ", y = " + y;
     }
 
-    public Point getP2(){
-        return p2;
+    public String getP2(){ //Changed to return String naming the x and y values of the Point object
+        int x = p2.getX();
+        int y = p2.getY();
+        return "x = " + x + ", y = " + y;
     }
 
     public String toString(){
