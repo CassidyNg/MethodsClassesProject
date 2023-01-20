@@ -11,16 +11,12 @@ public class Line2D {
         p2 = new Point(x2, y2);
     }
 
-    public String getP1(){ //Originally returned Point object's memory location 
-        int x = p1.getX();
-        int y = p1.getY();
-        return "x = " + x + ", y = " + y;
+    public Point getP1(){ 
+        return p1;
     }
 
-    public String getP2(){ //Changed to return String naming the x and y values of the Point object
-        int x = p2.getX();
-        int y = p2.getY();
-        return "x = " + x + ", y = " + y;
+    public Point getP2(){ 
+        return p2;
     }
 
     public String toString(){
